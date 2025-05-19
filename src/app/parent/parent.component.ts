@@ -3,14 +3,13 @@ import {Child1Component} from "../child1/child1.component";
 import {Child2Component} from "../child2/child2.component";
 
 @Component({
-  selector: 'app-parent',
-  standalone: true,
-  imports: [
-    Child1Component,
-    Child2Component
-  ],
-  templateUrl: './parent.component.html',
-  styleUrl: './parent.component.sass'
+    selector: 'app-parent',
+    imports: [
+        Child1Component,
+        Child2Component
+    ],
+    templateUrl: './parent.component.html',
+    styleUrl: './parent.component.sass'
 })
 export class ParentComponent implements OnInit,AfterViewInit{
 
