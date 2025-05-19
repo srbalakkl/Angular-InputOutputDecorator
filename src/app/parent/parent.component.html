@@ -1,4 +1,4 @@
 <p>parent works!</p>
-<app-child1 [childVariable]="'parent component'" (childVariable2)="getChildVariable($event)"></app-child1>
+<app-child1 [childVariable]="'parent component'" [ipSignalVar]="valueForChild()" (childVariable2)="getChildVariable($event)"></app-child1>
 <app-child2></app-child2>
 <p>The Child1's Variable is {{!childVariableValue}} </p>
